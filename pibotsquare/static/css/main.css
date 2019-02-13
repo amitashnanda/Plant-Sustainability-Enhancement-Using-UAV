@@ -1,0 +1,45 @@
+#body{
+  padding: 1%;
+  height: 550px;
+  overflow: hidden;
+}
+
+#controls{
+
+}
+.inner-wrapper{
+  margin-left:1%;
+  background-color: #efefef;
+  height: 100%;
+  padding: 1%;
+}
+
+.control-button{
+  width: 100px;
+}
+
+.control-button:active, .control-button.active{
+  background-color:#8cdb85;
+}
+
+.capture-button{
+  width: 200px;
+}
+.capture-button:active, .capture-button.active{
+  background-color:#8cdb85;
+}
+.bot-controls{
+  margin-top: 10%;
+}
+
+.cam-controls{
+  margin-top: 10%;
+}
+.capture-controls{
+  margin-top: 10%;
+  font-size: 150%;
+}
+#captured-image{
+  display: none;
+
+}

@@ -1,0 +1,94 @@
+DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bot Controller</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/main.css">
+  </head>
+  <body>
+
+    <section id='header'>
+      <nav class="navbar navbar-expand-sm bg-light">
+        <a class="navbar-brand" href="#">PLANT SUSTAINABILITY</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bot Controller</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id='body'>
+      <div class="row">
+        <div class="col-8">
+          <img id='currentImage' src="{{url_for('video_feed')}}" alt="" width="100%" height="90%">
+        </div>
+        <div class="col-4" id='controls'>
+          <div class="inner-wrapper">
+            <center>
+              <div class="bot-controls">
+                <h2>Bot Controls</h2>
+                <div class="row">
+                  <div class="col-4 offset-4">
+                    <center>
+                      <button type="button" class="control-button" name="button" id='forward-button'>Forward</button>
+                    </center>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-10 offset-1">
+                    <button type="button" class="control-button" name="button" id='left-button'>Left</button>
+                    <button type="button" class="control-button" name="button" id='back-button'>Back</button>
+                    <button type="button" class="control-button" name="button" id='right-button'>Right</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cam-controls">
+                <h2>Cam Controls</h2>
+                <div class="row">
+                  <div class="col-4 offset-4">
+                    <center>
+                      <button type="button" class="control-button" name="button" id='camera-up'>Up</button>
+                    </center>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-10 offset-1">
+                    <button type="button" class="control-button" name="button" id='camera-left'>Left</button>
+                    <button type="button" class="control-button" name="button" id='camera-down'>Down</button>
+                    <button type="button" class="control-button" name="button" id='camera-right'>Right</button>
+                  </div>
+                </div>
+              </div>
+              <div class="capture-controls">
+                <div class="row">
+                  <div class="col-6 offset-3">
+                    <center>
+                      <button type="button" class="capture-button" id='capture-button'name="button">Capture</button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div id="captured-image">
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</nav>
+  </body>
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+  <script type="text/javascript" src='/static/js/main.js'>
+
+  </script>
+</html>
