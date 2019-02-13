@@ -1,1 +1,2 @@
-
+The given implementation has a drone controlled through a remote server, a cloud database, an android based device along with some electronic circuitry for tracking, locating and monitoring the health of the planted saplings which will help the people as well as the concerned department (forest department) to monitor the existing/newly planted saplings. 
+The system uses basic growth parameters of the plant like leaf color, temperature, the moisture level of soil, humidity and concentration of Carbon Dioxide for continuous health and growth monitoring.
