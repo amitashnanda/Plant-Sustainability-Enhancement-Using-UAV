@@ -9,7 +9,6 @@ import cv2
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[21]:
@@ -163,7 +162,7 @@ no_noise=[]
 
 plt.figure(figsize=(20, 10))
 blur = cv2.GaussianBlur(res_img, (5,5), 0)
-display(res_img, blur)
+#display(res_img, blur)
 
 
 # In[31]:
@@ -173,9 +172,9 @@ display(res_img, blur)
 gray = cv2.cvtColor(res_img, cv2.COLOR_RGB2GRAY)
 ret, thresh = cv2.threshold(gray, 0, 255,
                             cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
-plt.figure(figsize=(29, 10))
+#plt.figure(figsize=(29, 10))
 # Displaying segmented images
-display(res_img, thresh)
+#display(res_img, thresh)
 
 
 # In[32]:
@@ -194,14 +193,14 @@ ret, sure_fg = cv2.threshold(dist_transform, 3,
                          255, 0)
 
 # displaying segmented back ground
-plt.figure(figsize=(20, 10))
-display(res_img, sure_fg, title2='Segmented')
+#plt.figure(figsize=(20, 10))
+#display(res_img, sure_fg, title2='Segmented')
 
 
 # In[33]:
 
 
-# converting into mask type: uint8
+# converting into masks
 mask = cv2.inRange(sure_fg, 255, 255)
 
 # finding contours
@@ -232,6 +231,8 @@ top = box[1]
 right = box[2]
 bottom = box[3]
 res_img = np.array(res_img[:,::-1])
-res = cv2.rectangle(res_img, (left,top), (right,bottom), (255, 100, 100), 2)
-plt.imshow('result', res)
+err_len = 50
+res = cv2.rectangle(res_img, (left+err_len,top+err_len),
+ (right+err_len,bottom+err_len), (255, 100, 100), 7)
+display(res, mask)
 
