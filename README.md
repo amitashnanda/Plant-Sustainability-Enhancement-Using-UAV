@@ -23,13 +23,10 @@ The research is potential enough to curb serious problems like environmental pol
 
 </p>
   
-
-<!-- ![Alt text](https://github.com/[amitashnanda]/[Color-Classification-and-Recycling-Bin-Detection]/blob/[results]/Figure_1a.png?raw=true)
-![Alt text](https://github.com/[amitashnanda]/[Color-Classification-and-Recycling-Bin-Detection]/blob/[results]/Figure_1.png?raw=true) -->
-![](/results/1.png)
-![](/results/2.png)
-![](/results/3.png)
-![](/results/4.png)
-![](/results/5.png)
-![](/results/6.png)
-![](/results/7.png)
+![](/results/1.jpg)
+![](/results/2.jpg)
+![](/results/3.jpg)
+![](/results/4.jpg)
+![](/results/5.jpg)
+![](/results/6.jpg)
+![](/results/7.jpg)
